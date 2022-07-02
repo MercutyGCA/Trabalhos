@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <script src="form.js"></script>
+    </head>
+    <style>
+        .formulario{
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        .Titulo{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: #000;
+        }
+        .formulario input{
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+       
+       
+    </style>
+    <body>
+        <h1 class="Titulo">Login</h1>
+        <hr>
+        <form class="formulario" action="form.html">
+            
+                <label>E-mail</label><br>
+                <input class="botao4"type="text" id="email" placeholder="Contato@htmlecsspro.com">
+            <div id="impSenha"></div>
+                <label>Senha</label><br>
+                <input class="botao3" type="password" placeholder="1234" id="senha" name="senha" onkeyup="vF()">
+                <br>
+            
+                <input class="botao" type="submit" value="Entrar" onclick="Validar()">
+            
+        </form>
+    </body>
+</html>
