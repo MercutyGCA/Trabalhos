@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <script src="form.js"></script>
+    </head>
+    <style>
+        .formulario{
+            margin-left: 40%;
+            margin-right: 40%;
+            padding: 1%;
+            background-color: #f2f2f2;
+            border: solid 1px black;
+            border-radius: 5px;
+        }
+        .formulario input{
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .botao{
+            cursor: pointer;
+            margin-left: 4%;
+        }
+
+        label{
+            padding-left: 40%;
+            font-size:105%;
+        }
+
+        h1{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: 2px solid gray;
+            padding: 5px;
+            box-shadow: 3px 3px greenyellow;
+            border-radius: 5px;
+            margin-left: 35%;
+            margin-right: 35%;
+            color: greenyellow;
+            background-color: #ccc;
+        }
+       
+       
+    </style>
+    <body>
+        <h1 class="Titulo">Formulario de Login</h1>
+        <form class="formulario" action="form.html">
+            
+                <label>E-mail</label><br>
+                <input class="botao4"type="text" id="email">
+            <div id="impSenha"></div>
+                <label>Senha</label><br>
+                <input class="botao3" type="password"id="senha" name="senha" onkeyup="vF()">
+                <br>
+            
+                <input class="botao" type="submit" value="Entrar" onclick="Validar()">
+            
+        </form>
+    </body>
+</html>

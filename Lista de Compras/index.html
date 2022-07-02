@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    var conf = confirm("Deseja adcionar um item?");
+    if(conf == true){
+        var prod = prompt("Qual o nome do produto?");
+        var quant = parseInt(prompt("Qual a quantidade?"));
+        var valor = parseInt(prompt("Qual o valor?",));
+        var conf2 = confirm("Deseja adcionar mais um item?");
+            if(conf2 == true){
+                while(conf2 == true){
+                    var prod = prompt("Qual o nome do produto?");
+                    var quant = parseInt(prompt("Qual a quantidade?"));
+                    var valor = parseInt(prompt("Qual o valor?",));
+                    conf2 = confirm("Deseja adcionar mais um item?");
+                }
+                    
+            }
+            else if(conf2 == false){
+                        document.write("Produtos: " + prod + "<br>" +
+                                    "Quantidade: " + quant + "<br>" +
+                                    "Valor: R$ " + valor
+                        );
+            }
+        }
+            else{
+                alert("OK");
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
